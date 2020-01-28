@@ -1,0 +1,191 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: "Titillium Web", sans-serif;
+}
+
+/* ------------ container ------------ */
+.container {
+  padding: 10px;
+  width: 380px;
+  margin: 0 auto;
+}
+
+/* ------------ header ------------ */
+.header {
+  width: 380px;
+  height: 200px;
+  background-image: url("../img/bg6.jpg");
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+  animation: 10s para linear infinite;
+}
+
+@keyframes para {
+  100% {
+    background-position: -5000px 20%, -800px 95%, 500px 50%, 1000px 100%,
+      400px 0;
+  }
+}
+.clear {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.clear i {
+  font-size: 30px;
+  color: lightskyblue;
+}
+.clear i:hover {
+  cursor: pointer;
+  text-shadow: 1px 3px 5px #000;
+  transform: rotate(45deg);
+}
+#date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+  text-shadow: -5px 5px 4px lightskyblue;
+  font-size: 30px;
+  font-family: "Titillium Web", sans-serif;
+  animation: blinker 2s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ------------ content ------------ */
+.content {
+  width: 380px;
+  height: 350px;
+  max-height: 350px;
+  background-color: whitesmoke;
+  box-shadow: -4px 6px 5px whitesmoke;
+  overflow: auto;
+}
+.content::-webkit-scrollbar {
+  display: none;
+}
+.content ul {
+  padding: 0;
+  margin: 0;
+}
+.item {
+  width: 380px;
+  height: 45px;
+  min-height: 45px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.item i.co {
+  position: absolute;
+  font-size: 25px;
+  padding-left: 5px;
+  left: 15px;
+  top: 10px;
+}
+.item i.co:hover {
+  cursor: pointer;
+}
+.fa-check-circle {
+  color: #6eb200;
+}
+.item p.text {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  left: 50px;
+  top: 5px;
+  background-color: #fff;
+  max-width: 285px;
+}
+.lineThrough {
+  text-decoration: line-through;
+  color: #ccc;
+}
+.item i.de {
+  position: absolute;
+  font-size: 25px;
+  right: 15px;
+  top: 10px;
+}
+.item i.de:hover {
+  color: #af0000;
+  cursor: pointer;
+}
+/* ------------ add item ------------ */
+.add-to-do {
+  position: relative;
+  width: 360px;
+  height: 40px;
+  background-color: #fff;
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.add-to-do i {
+  position: absolute;
+  font-size: 40px;
+  color: #4162f6;
+  animation: blinker 2s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.add-to-do input {
+  position: absolute;
+  left: 50px;
+  height: 35px;
+  width: 310px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  padding-left: 10px;
+  font-weight: 600;
+  font-stretch: extra-expanded;
+  font-style: italic;
+  animation: blinker 2s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+html {
+  height: auto;
+  width: auto;
+  background-color: hsla(200, 40%, 30%, 0.4);
+  background-image: url("https://images.pexels.com/photos/1449082/pexels-photo-1449082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+
+  background-repeat: repeat-x;
+  background-position: 0 20%, 0 100%, 0 50%, 0 100%, 0 0;
+  background-size: 1000px, 800px, 500px 200px, 1000px, 400px 260px;
+  animation: 50s para linear infinite;
+}
+
+@keyframes para {
+  100% {
+    background-position: -5000px 20%, -800px 95%, 500px 50%, 1000px 100%,
+      400px 0;
+  }
+}
